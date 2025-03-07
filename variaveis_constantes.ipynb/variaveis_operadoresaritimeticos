@@ -1,0 +1,318 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMtmq1xpHj7lCA63/0CBGEb",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/KaiqueCar/PA_2025/blob/main/variaveis_constantes.ipynb/variaveis_operadoresaritimeticos\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#variaveis e constantes\n",
+        "negrito"
+      ],
+      "metadata": {
+        "id": "JSYmI6w3gRAK"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "idade = 15\n",
+        "altura = 1.68\n",
+        "nome = \"Kaique Carmo\"\n",
+        "vai = True\n"
+      ],
+      "metadata": {
+        "id": "qFAiGZdFgdh-"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "js4gw_tzf9OQ"
+      },
+      "outputs": [],
+      "source": [
+        "nomes = [\"Cintia Pinho\", \"Kaique\", \"Carlos\"]\n",
+        "nomes2 = (\"Cintia Pinho\", \"Kaique\", \"Carlos\")\n",
+        "tudo = {nome:\"Cintia Pinho\", idade: 42, altura: 1.52}"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"O nome dele é: \", nome, \" Sua idade é: \", idade, \" Ela tem \" , altura, \" metros \" )"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XaaR4FobpPmc",
+        "outputId": "15ad8f94-88a7-44ee-9a2f-f2e21af4d2b4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "O nome dele é:  Kaique Carmo  Sua idade é:  15  Ela tem  1.68  metros \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(nome)\n",
+        "print(nomes)\n",
+        "print(nomes2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "V2ruyfGDjM-T",
+        "outputId": "0c3b9061-e095-47f2-e6cd-ebc58e5cc029"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "kaique Carmo\n",
+            "['Cintia Pinho', 'Kaique', 'Carlos']\n",
+            "('Cintia Pinho', 'Kaique', 'Carlos')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(type(idade))\n",
+        "print(type(altura))\n",
+        "print(type(vai))\n",
+        "print(type(nome))\n",
+        "print(type(nomes))\n",
+        "print(type(nomes2))\n",
+        "print(type(tudo))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zsTVwWYQkoum",
+        "outputId": "21dad64b-3067-434d-b7cd-8692706b943e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n",
+            "<class 'float'>\n",
+            "<class 'bool'>\n",
+            "<class 'str'>\n",
+            "<class 'list'>\n",
+            "<class 'tuple'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nome = \"kaique\"\n"
+      ],
+      "metadata": {
+        "id": "20F4dgTcsYhN"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(f\"Nome: {nome}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Gme63uJktCLY",
+        "outputId": "f64a39a4-57a7-4f84-8170-a95f6abfa4aa"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Nome: kaique\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Area do circulo"
+      ],
+      "metadata": {
+        "id": "cOLC300-vb1m"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "PI = 3.14159\n",
+        "raio = float(input(\"Digite o valor do raio do círculo: \"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BbsHdRT7vnA-",
+        "outputId": "c14a8c07-1899-4ff8-b916-6c39c84c299d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite o valor do raio do circulo: 8\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "areacir = PI * (raio**2)"
+      ],
+      "metadata": {
+        "id": "7l1_9g1dwdsK"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(f\"A área do círculo é: {areacir}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5wuMDoA3xQFw",
+        "outputId": "1166f66a-75c7-4460-a2a4-d5f2a8de723d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "A área do círculo é: 201.06176\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Area do quadrado"
+      ],
+      "metadata": {
+        "id": "Q-huAidDzwEP"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "lado = float(input(\"Digite o valor do lado: \"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-OfWj70Iz0Ev",
+        "outputId": "6115b0aa-efee-41df-e5b0-7278da99ce92"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite o valor do lado: 2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "area = lado ** 2"
+      ],
+      "metadata": {
+        "id": "JwkRzvGn0NJj"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(f\"A área do quadrado é: {area}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mBabwhoY0nNi",
+        "outputId": "dc45bf5f-6c7c-42ad-b860-04422baf1add"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "A área do quadrado é: 4.0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
